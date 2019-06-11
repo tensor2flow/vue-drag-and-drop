@@ -1,6 +1,6 @@
 # vuedragging
 
-The Vue Dragging tools for easy create your vue components
+The Vue Dragging tools for easy create your vue draggable components
 
 ## Install
 ```
