@@ -1,3 +1,71 @@
 # vuedragging
 
 The Vue Dragging tools for easy create your vue components
+
+## Install
+```
+npm install @tensor2flow/vuegragging
+```
+
+## Install as plugin
+```js
+import Vue from 'vue'
+import Dragging from 'vuedragging'
+
+Vue.use(Dragging)
+```
+
+## Usage
+```html
+<template>
+    <v-app>
+        <v-list>
+            <dragging v-model="items">
+                <v-list-tile v-for="(item, i) in items" v-bind:key="i">
+                    {{item}}
+                </v-list-tile>
+            <dragging v-model="list">
+        </v-list>
+        </dragging>
+    <v-app>
+</template>
+<script>
+export default {
+    name: 'App',
+    data: () => ({
+        items: ['Item1', 'Item2', 'Item3', 'Item4']
+    })
+}
+</script>
+```
+
+Implements dragging features to component
+```html
+<template>
+    <v-app>
+        <v-dragging-list v-model="items">
+            <v-list-tile v-for="(item, i) in items" v-bind:key="i">
+                {{item}}
+            </v-list-tile>
+        </v-dragging-list>
+    <v-app>
+</template>
+<script>
+import { VList } from 'vuetify/lib'
+
+import { createSimpleDraggable } from '@tensor2flow/vuedragging/utils'
+const VDraggingList = createSimpleDraggable('v-list', VList)
+
+// Or
+import Vue from 'vue'
+const VDraggingList = Vue.$dragging.createSimpleDraggable('v-list', VList)
+
+export default {
+    name: 'App',
+    components: { 'v-dragging-list' : VDraggingList },
+    data: () => ({
+        items: ['Item1', 'Item2', 'Item3', 'Item4']
+    })
+}
+</script>
+```
