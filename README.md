@@ -1,6 +1,7 @@
 # vuedragging
 
 The Vue Dragging tools for easy create your vue draggable components
+`Note : I added the mixin and createSimpleDraggable features to `(VueDraggable)[https://github.com/SortableJS/Vue.Draggable]
 
 ## Install
 ```
@@ -35,6 +36,20 @@ export default {
     data: () => ({
         items: ['Item1', 'Item2', 'Item3', 'Item4']
     })
+}
+</script>
+```
+
+Create your component with dragging features
+```html
+<template>
+    ...
+</template>
+<script>
+import dragging from '@tensor2flow/vuedragging/mixin'
+export default {
+    name: '...',
+    mixins: [dragging]
 }
 </script>
 ```
