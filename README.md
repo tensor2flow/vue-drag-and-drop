@@ -24,7 +24,7 @@ Vue.use(Dragging)
                 <v-list-tile v-for="(item, i) in items" v-bind:key="i">
                     {{item}}
                 </v-list-tile>
-            <dragging v-model="list">
+            </dragging>
         </v-list>
         </dragging>
     <v-app>
