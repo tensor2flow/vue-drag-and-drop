@@ -10,7 +10,7 @@ npm install @tensor2flow/vuegragging
 ## Install as plugin
 ```js
 import Vue from 'vue'
-import Dragging from 'vuedragging'
+import Dragging from '@tensor2flow/vuedragging'
 
 Vue.use(Dragging)
 ```
