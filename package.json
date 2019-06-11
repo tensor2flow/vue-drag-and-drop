@@ -1,6 +1,6 @@
 {
-  "name": "vuedragging",
-  "version": "1.0.0",
+  "name": "@tensor2flow/vuedragging",
+  "version": "1.0.1",
   "description": "The Vue Dragging tools for make easy draggable components",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,6 @@
   "homepage": "https://github.com/tensor2flow/vuedragging#readme",
   "dependencies": {
     "sortablejs": "^1.10.0-rc2"
-  }
+  },
+  "devDependencies": {}
 }
