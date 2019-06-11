@@ -4,7 +4,7 @@ The Vue Dragging tools for easy create your vue draggable components
 
 ## Install
 ```
-npm install @tensor2flow/vuegragging
+npm install @tensor2flow/vuedragging
 ```
 
 ## Install as plugin
