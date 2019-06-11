@@ -2,7 +2,7 @@
 
 The Vue Dragging tools for easy create your vue draggable components
 
-`Note :` I added the mixin and createSimpleDraggable features to [VueDraggable](https://github.com/SortableJS/Vue.Draggable)
+Note : I added the `mixin` and `createSimpleDraggable` features to [VueDraggable](https://github.com/SortableJS/Vue.Draggable)
 
 ## Install
 ```
