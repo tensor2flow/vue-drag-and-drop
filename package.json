@@ -1,0 +1,31 @@
+{
+  "name": "vuedragging",
+  "version": "1.0.0",
+  "description": "The Vue Dragging tools for make easy draggable components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tensor2flow/vuedragging.git"
+  },
+  "keywords": [
+    "Vue",
+    "drag",
+    "drop",
+    "draggable",
+    "dragging",
+    "component",
+    "easy"
+  ],
+  "author": "Firdavs Beknazarov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tensor2flow/vuedragging/issues"
+  },
+  "homepage": "https://github.com/tensor2flow/vuedragging#readme",
+  "dependencies": {
+    "sortablejs": "^1.10.0-rc2"
+  }
+}
