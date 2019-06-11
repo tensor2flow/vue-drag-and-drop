@@ -1,6 +1,13 @@
+import data from './data'
+import props from './props'
+import created from './created'
+import mounted from './mounted'
+import watch from './watch'
+import methods from './methods'
+
 export default {
   inheritAttrs: false,
-  data: () => data,
+  data,
   props,
   created,
   mounted,
