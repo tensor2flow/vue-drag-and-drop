@@ -5,19 +5,44 @@ The Vue Dragging tools for easy create your vue components
 [![GitHub open issues](https://img.shields.io/github/issues/tensor2flow/vuedragging.svg)](https://github.com/tensor2flow/vuedragging/issues)
 [![MIT License](https://img.shields.io/github/license/tensor2flow/vuedragging.svg)](https://github.com/tensor2flow/vuedragging/blob/master/LICENSE)
 
-Note : I added the `mixin` and `createSimpleDraggable` features to [VueDraggable](https://github.com/SortableJS/Vue.Draggable)
+Note : I added the `mixin` and `createSimpleDraggable` features to [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)
 
 ## Install
 ```
 npm install @tensor2flow/vuedragging
 ```
 
-## Install as plugin
+## Features
+
+* Full support of [Sortable.js](https://github.com/RubaXa/Sortable) features:
+    * Supports touch devices
+    * Supports drag handles and selectable text
+    * Smart auto-scrolling
+    * Support drag and drop between different lists
+    * No jQuery dependency
+* Full support of [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable) features:
+    * Keeps in sync HTML and view model list
+    * Compatible with Vue.js 2.0 transition-group
+    * Cancellation support
+    * Events reporting any changes when full control is needed
+    * Reuse existing UI library components (such as [vuetify](https://vuetifyjs.com), [element](http://element.eleme.io/), or [vue material](https://vuematerial.io) etc...) and make them draggable using `tag` and `componentData` props
+* Implement dragging features to ready components
+* Create draggable component by using dragging mixin
+
+## Init as plugin
 ```js
 import Vue from 'vue'
 import Dragging from '@tensor2flow/vuedragging'
 
 Vue.use(Dragging)
+```
+
+## Init as component
+```js
+import Vue from 'vue'
+import Draggable from '@tensor2flow/vuedragging/component'
+
+Vue.component('draggable', Draggable)
 ```
 
 ## Usage
@@ -31,7 +56,6 @@ Vue.use(Dragging)
                 </v-list-tile>
             </dragging>
         </v-list>
-        </dragging>
     <v-app>
 </template>
 <script>
@@ -88,3 +112,5 @@ export default {
 }
 </script>
 ```
+
+Find more documentation from [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable).
