@@ -2,12 +2,6 @@
 
 The Vue Dragging tools for easy create your vue components
 
-## Install
-```
-npm install @tensor2flow/vuegragging
-```
-The Vue Dragging tools for easy create your vue draggable components
-
 [![GitHub open issues](https://img.shields.io/github/issues/tensor2flow/vuedragging.svg)](https://github.com/tensor2flow/vuedragging/issues)
 [![MIT License](https://img.shields.io/github/license/tensor2flow/vuedragging.svg)](https://github.com/tensor2flow/vuedragging/blob/master/LICENSE)
 
