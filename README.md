@@ -1,4 +1,4 @@
-# vuedragging
+# vue-drag-and-drop
 
 The Vue Dragging tools for easy create your vue components
 
