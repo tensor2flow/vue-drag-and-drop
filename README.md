@@ -50,7 +50,7 @@ Vue.component('draggable', Draggable)
 <template>
     <v-app>
         <v-list>
-            <dragging v-model="items">
+            <dragging v-model="items" group="items" @start="drag=true" @end="drag=false">
                 <v-list-tile v-for="(item, i) in items" v-bind:key="i">
                     {{item}}
                 </v-list-tile>
@@ -86,7 +86,7 @@ Implements dragging features to component
 ```html
 <template>
     <v-app>
-        <v-dragging-list v-model="items">
+        <v-dragging-list v-model="items" group="items" @start="drag=true" @end="drag=false">
             <v-list-tile v-for="(item, i) in items" v-bind:key="i">
                 {{item}}
             </v-list-tile>
